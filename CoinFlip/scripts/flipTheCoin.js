@@ -82,9 +82,12 @@ const main = async () => {
 
 	provider.on("block", async (blockNumber) => {
 		console.log("New block mined:", blockNumber)
+
 		await contract.flipToWin()
+
 		const consecutiveWins = await coinFlipContract.consecutiveWins()
 		console.log("Consecutive wins:", consecutiveWins)
+
 		if (consecutiveWins >= 10) {
 			console.log("You won!")
 			process.exit(0)
