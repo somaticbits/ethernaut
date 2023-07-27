@@ -108,6 +108,10 @@ With the ``balanceOf`` method, the balance of the player can be checked.
 ## Level 7 - Force  
 *Repo - [Force](Force)*
 
+This article gives the solution: [Selfdestruct Solidity](https://www.alchemy.com/overviews/selfdestruct-solidity)  
+
+The main way to solve this level is to use the ``selfdestruct`` method.  
+
 ## Level 8 - Vault  
 *Repo - [Vault](Vault)*
 
