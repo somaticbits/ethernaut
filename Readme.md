@@ -1,6 +1,8 @@
 # Ethernaut walkthrough
 The Ethernaut is a Web3/Solidity based wargame inspired on overthewire.org.  
 
+The solutions are not exhaustive, these are the ones I've been using to solve the challenges.
+
 *Note:* The levels labelled with ``console`` can be solved using only the developer console.  
 The ones with ``repo`` need to be compiled, deployed and solved using this repository.
 
@@ -13,7 +15,6 @@ Then call the contract methods and follow the trail to find the final password.
 ## Level 1 - Fallback  
 *Console*  
 
-This one can also be solved by using the developer console.  
 In this case, the ``receive`` fallback function allows to take ownership of the contract.
 First send a contribution via the ``contribute`` method:  
 ````contract.contribute({value: toWei("0.001")})````  
@@ -26,7 +27,7 @@ Check the ownership of the contract by calling the ``contract.owner()`` method.
 ## Level 2 - Fallout  
 *Console*  
 
-If you check the contract code, you will notice that there's a typo in the function serving as constructor.  
+Check the contract code, you will notice that there's a typo in the function serving as constructor.  
 Just call the ``Fal1out`` method to get the ownership of the contract:  
 ````contract.Fal1out()````  
 
@@ -47,6 +48,6 @@ Check the ownership of the contract by calling the ``contract.owner()`` method.
 ## Level 7 - Force  
 *Repo - [Force](Force)*
 
-
 ## Level 8 - Vault  
+*Repo - [Vault](Vault)*
 
