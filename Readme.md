@@ -42,6 +42,14 @@ Check the ownership of the contract by calling the ``contract.owner()`` method.
 ## Level 5 - Token  
 *Console*
 
+This contract has been written with Solidity 0.6.0, so this exploit isn't valid in the current versions (0.8.19) but still good for knowledge.  
+Also, if you need to work with this version of Solidity, you should use OpenZeppelin's SafeMath library that checks for over/underflows.  
+
+The ``transfer`` method is vulnerable to an integer overflow. Which can be triggered by sending (player has a balance of 20, so 21 will trigger the overflow):  
+````contract.transfer(player, 21)````
+
+If you check the ``balanceOf`` method, you will see that the balance of the player is now a lot larger than the original 20.
+
 ## Level 6 - Delegation  
 *Repo - [Delegation](Delegation)*
 
