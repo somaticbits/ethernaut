@@ -36,15 +36,16 @@ Check the ownership of the contract by calling the ``contract.owner()`` method.
 *Repo - [CoinFlip](CoinFlip)*
 
 ## Level 4 - Telephone  
-
+*Repo - [Telephone](Telephone)*
 
 ## Level 5 - Token  
-
+*Console*
 
 ## Level 6 - Delegation  
-
+*Repo - [Delegation](Delegation)*
 
 ## Level 7 - Force  
+*Repo - [Force](Force)*
 
 
 ## Level 8 - Vault  
