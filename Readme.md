@@ -22,16 +22,15 @@ First send a contribution via the ``contribute`` method:
 Then send any ether value above 0 to the contract:  
 ````contract.sendTransaction({value: toWei("0.001")})````
 
-Check the ownership of the contract by calling the ``contract.owner()`` method.
+The ownership of the contract can be checked with the ``contract.owner()`` method.
 
 ## Level 2 - Fallout  
 *Console*  
 
-Check the contract code, you will notice that there's a typo in the function serving as constructor.  
-Just call the ``Fal1out`` method to get the ownership of the contract:  
+There's a vulnerability in the ``Fal1out`` method serving as constructor. The contract has a typo which allows to take ownership of it:  
 ````contract.Fal1out()````  
 
-Check the ownership of the contract by calling the ``contract.owner()`` method.
+The ownership of the contract can be checked with the ``contract.owner()`` method.
 
 ## Level 3 - Coin Flip  
 *Repo - [CoinFlip](CoinFlip)*
@@ -42,15 +41,15 @@ Check the ownership of the contract by calling the ``contract.owner()`` method.
 ## Level 5 - Token  
 *Console*
 
-This contract has been written with Solidity 0.6.0, so this exploit isn't valid in the current versions (0.8.19) but still good for knowledge. Also, if you need to work with this version of Solidity, you should use OpenZeppelin's SafeMath library that checks for over/underflows.  
+This contract has been written with Solidity 0.6.0, so this exploit isn't valid in the current versions (0.8.19) but still good for knowledge. Also, if you need to work with this version of Solidity, use OpenZeppelin's SafeMath library checking for over/underflows.  
 
 Here's a bit more information: [Hack Solidity: Integer Overflow and Underflow](https://hackernoon.com/hack-solidity-integer-overflow-and-underflow)  
 
-The ``transfer`` method is vulnerable to an integer overflow. Which can be triggered like this:  
+The ``transfer`` method is vulnerable to an integer overflow. That can be triggered like this:  
 ````contract.transfer(player, 21)````
 
 Player has a balance of 20 tokens, so using 21 as value will trigger the overflow.
-If you check the ``balanceOf`` method, you will see that the balance of the player is now a lot larger than the original 20 tokens.
+With the ``balanceOf`` method, the balance of the player can be checked.
 
 ## Level 6 - Delegation  
 *Repo - [Delegation](Delegation)*
