@@ -44,6 +44,8 @@ Check the ownership of the contract by calling the ``contract.owner()`` method.
 
 This contract has been written with Solidity 0.6.0, so this exploit isn't valid in the current versions (0.8.19) but still good for knowledge. Also, if you need to work with this version of Solidity, you should use OpenZeppelin's SafeMath library that checks for over/underflows.  
 
+Here's a bit more information: [Hack Solidity: Integer Overflow and Underflow](https://hackernoon.com/hack-solidity-integer-overflow-and-underflow)  
+
 The ``transfer`` method is vulnerable to an integer overflow. Which can be triggered by sending (player has a balance of 20, so 21 will trigger the overflow):  
 ````contract.transfer(player, 21)````
 
