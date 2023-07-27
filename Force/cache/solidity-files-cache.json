@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\Server\\Desktop\\Desktop\\Dev\\ethernaut\\Force\\contracts\\TakeTheEth.sol": {
+      "lastModificationDate": 1690455666289,
+      "contentHash": "21cc3068603b3b14ee26dd6012a8905b",
+      "sourceName": "contracts/TakeTheEth.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TakeTheEth"
+      ]
+    }
+  }
+}
