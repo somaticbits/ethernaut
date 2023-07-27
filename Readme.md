@@ -17,7 +17,7 @@ In this case, the ``receive`` fallback function allows to take ownership of the 
 First send a contribution via the ``contribute`` method:  
 ````contract.contribute({value: toWei("0.001")})````  
 
-Then send any ether value above 0 to the contract:
+Then send any ether value above 0 to the contract:  
 ````contract.sendTransaction({value: toWei("0.001")})````
 
 You can check that the ownership of the contract changed to your address by calling the ``contract.owner()`` method.
@@ -26,7 +26,7 @@ You can check that the ownership of the contract changed to your address by call
 *Console*  
 
 If you check the contract code, you will notice that there's a typo in the function serving as constructor.  
-Just call the ``Fal1out`` method to get the ownership of the contract.  
+Just call the ``Fal1out`` method to get the ownership of the contract:  
 ````contract.Fal1out()````
 
 ## Level 3 - Coin Flip  
