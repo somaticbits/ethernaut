@@ -1,7 +1,8 @@
 # Ethernaut walkthrough
 The Ethernaut is a Web3/Solidity based wargame inspired on overthewire.org.  
 
-*Note:* The levels labelled with ``console`` can be solved using only the developer console
+*Note:* The levels labelled with ``console`` can be solved using only the developer console.  
+The ones with ``repo`` need to be compiled, deployed and solved using this repository.
 
 ## Level 0 - Hello Ethernaut  
 *Console*  
@@ -20,17 +21,19 @@ First send a contribution via the ``contribute`` method:
 Then send any ether value above 0 to the contract:  
 ````contract.sendTransaction({value: toWei("0.001")})````
 
-You can check that the ownership of the contract changed to your address by calling the ``contract.owner()`` method.
+Check the ownership of the contract by calling the ``contract.owner()`` method.
 
 ## Level 2 - Fallout  
 *Console*  
 
 If you check the contract code, you will notice that there's a typo in the function serving as constructor.  
 Just call the ``Fal1out`` method to get the ownership of the contract:  
-````contract.Fal1out()````
+````contract.Fal1out()````  
+
+Check the ownership of the contract by calling the ``contract.owner()`` method.
 
 ## Level 3 - Coin Flip  
-
+*Repo - [CoinFlip](CoinFlip)*
 
 ## Level 4 - Telephone  
 
