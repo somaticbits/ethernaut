@@ -1,5 +1,5 @@
-require("dotenv").config();
-const hre = require("hardhat");
+require("dotenv").config()
+const hre = require("hardhat")
 
 const TAKETHEETH_CONTRACT = "0x3b19C554770C57640fa2344C2d108Dd032A0Ac06"
 
