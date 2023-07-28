@@ -12,8 +12,8 @@ The ones with ``repo`` need to be compiled, deployed and solved using this repos
 Use the developer console to access the functionalities.  
 Then call the contract methods and follow the trail to find the final password.
 
-## Level 1 - Fallback  
-*Console*  
+<details><summary><h2>Level 1 - Fallback</h2></summary>
+*Console*
 
 ### Code hint
 ````solidity
@@ -31,6 +31,7 @@ Then send any ether value above 0 to the contract:
 ````contract.sendTransaction({value: toWei("0.001")})````
 
 The ownership of the contract can be checked with the ``contract.owner()`` method.
+</details>
 
 ## Level 2 - Fallout  
 *Console*  
