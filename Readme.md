@@ -62,7 +62,7 @@ The ownership of the contract can be checked with the ``contract.owner()`` metho
 </details>
 
 <details><summary><h2>Level 4 - Telephone</h2></summary>
-<i>Repo - [Telephone](Telephone)</i>
+<i>Repo - <a href="https://github.com/somaticbits/ethernaut/tree/main/Telephone">Telephone</a></i>
 
 ### Code hint
 ````solidity
@@ -99,7 +99,7 @@ With the ``balanceOf`` method, the balance of the player can be checked.
 </details>
 
 <details><summary><h2>Level 6 - Delegation</h2></summary>
-*Repo - [Delegation](Delegation)*
+<i>Repo - <a href="https://github.com/somaticbits/ethernaut/tree/main/Delegation">Delegation</a></i>
 
 ### Code hint
 ````solidity
@@ -113,7 +113,7 @@ With the ``balanceOf`` method, the balance of the player can be checked.
 </details>
 
 <details><summary><h2>Level 7 - Force</h2></summary>
-*Repo - [Force](Force)*
+<i>Repo - <a href="https://github.com/somaticbits/ethernaut/tree/main/Force">Force</a></i>
 
 This article gives the solution: [Selfdestruct Solidity](https://www.alchemy.com/overviews/selfdestruct-solidity)  
 
@@ -121,7 +121,7 @@ The main way to solve this level is to use the ``selfdestruct`` method.
 </details>
 
 <details><summary><h2>Level 8 - Vault</h2></summary>
-*Repo - [Vault](Vault)*
+<i>Repo - <a href="https://github.com"></a></i>
 
 ### Code hint
 ````solidity
