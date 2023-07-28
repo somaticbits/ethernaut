@@ -121,7 +121,7 @@ The main way to solve this level is to use the ``selfdestruct`` method.
 </details>
 
 <details><summary><h2>Level 8 - Vault</h2></summary>
-<i>Repo - <a href="https://github.com/somaticbits/ethernaut/tree/main/Vault"></a></i>
+<i>Repo - <a href="https://github.com/somaticbits/ethernaut/tree/main/Vault">Vault</a></i>
 
 ### Code hint
 ````solidity
