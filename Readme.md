@@ -14,7 +14,7 @@ Then call the contract methods and follow the trail to find the final password.
 </details>
 
 <details><summary><h2>Level 1 - Fallback</h2></summary>
-*Console*
+<i>Console</i>
 
 ### Code hint
 ````solidity
@@ -35,7 +35,7 @@ The ownership of the contract can be checked with the ``contract.owner()`` metho
 </details>
 
 <details><summary><h2>Level 2 - Fallout</h2></summary>
-*Console*  
+<i>Console</i> 
 
 ### Code hint
 ````solidity
@@ -53,7 +53,7 @@ The ownership of the contract can be checked with the ``contract.owner()`` metho
 </details>
 
 <details><summary><h2>Level 3 - Coin Flip</h2></summary>
-*Repo - [CoinFlip](CoinFlip)*
+<i>Repo - <a href="https://github.com/somaticbits/ethernaut/tree/main/CoinFlip">CoinFlip</a></i>
 
 ### Code hint
 ````solidity
@@ -62,7 +62,7 @@ The ownership of the contract can be checked with the ``contract.owner()`` metho
 </details>
 
 <details><summary><h2>Level 4 - Telephone</h2></summary>
-*Repo - [Telephone](Telephone)*
+<i>Repo - [Telephone](Telephone)</i>
 
 ### Code hint
 ````solidity
@@ -75,7 +75,7 @@ The ownership of the contract can be checked with the ``contract.owner()`` metho
 </details>
 
 <details><summary><h2>Level 5 - Token</h2></summary>
-*Console*
+<i>Console</i>
 
 ### Code hint
 ````solidity
