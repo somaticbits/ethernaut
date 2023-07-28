@@ -6,11 +6,12 @@ The solutions are not exhaustive, these are the ones I've been using to solve th
 *Note:* The levels labelled with ``console`` can be solved using only the developer console.  
 The ones with ``repo`` need to be compiled, deployed and solved using this repository.
 
-## Level 0 - Hello Ethernaut  
+<details><summary><h2>Level 0 - Hello Ethernaut</h2></summary> 
 *Console*  
 
 Use the developer console to access the functionalities.  
 Then call the contract methods and follow the trail to find the final password.
+</details>
 
 <details><summary><h2>Level 1 - Fallback</h2></summary>
 *Console*
@@ -33,7 +34,7 @@ Then send any ether value above 0 to the contract:
 The ownership of the contract can be checked with the ``contract.owner()`` method.
 </details>
 
-## Level 2 - Fallout  
+<details><summary><h2>Level 2 - Fallout</h2></summary>
 *Console*  
 
 ### Code hint
@@ -49,16 +50,18 @@ There's a vulnerability in the ``Fal1out`` method serving as constructor. The co
 ````contract.Fal1out()````  
 
 The ownership of the contract can be checked with the ``contract.owner()`` method.
+</details>
 
-## Level 3 - Coin Flip  
+<details><summary><h2>Level 3 - Coin Flip</h2></summary>
 *Repo - [CoinFlip](CoinFlip)*
 
 ### Code hint
 ````solidity
     uint256 blockValue = uint256(blockhash(block.number - 1));
 ````
+</details>
 
-## Level 4 - Telephone  
+<details><summary><h2>Level 4 - Telephone</h2></summary>
 *Repo - [Telephone](Telephone)*
 
 ### Code hint
@@ -69,8 +72,9 @@ The ownership of the contract can be checked with the ``contract.owner()`` metho
         }
     }
 ````
+</details>
 
-## Level 5 - Token  
+<details><summary><h2>Level 5 - Token</h2></summary>
 *Console*
 
 ### Code hint
@@ -92,8 +96,9 @@ The ``transfer`` method is vulnerable to an integer overflow. That can be trigge
 
 Player has a balance of 20 tokens, so using 21 as value will trigger the overflow.
 With the ``balanceOf`` method, the balance of the player can be checked.
+</details>
 
-## Level 6 - Delegation  
+<details><summary><h2>Level 6 - Delegation</h2></summary>
 *Repo - [Delegation](Delegation)*
 
 ### Code hint
@@ -105,15 +110,17 @@ With the ``balanceOf`` method, the balance of the player can be checked.
         }
     }
 ````
+</details>
 
-## Level 7 - Force  
+<details><summary><h2>Level 7 - Force</h2></summary>
 *Repo - [Force](Force)*
 
 This article gives the solution: [Selfdestruct Solidity](https://www.alchemy.com/overviews/selfdestruct-solidity)  
 
 The main way to solve this level is to use the ``selfdestruct`` method.  
+</details>
 
-## Level 8 - Vault  
+<details><summary><h2>Level 8 - Vault</h2></summary>
 *Repo - [Vault](Vault)*
 
 ### Code hint
@@ -128,4 +135,4 @@ The ``password`` state variable of the contract is ``private`` but it can be rea
 But to read them, all one needs to do is to find the storage slot of the variable and read it.
 
 Here's a bit more information: [How to keep secrets on Ethereum](https://medium.com/hackernoon/your-private-solidity-variable-is-not-private-save-it-before-it-becomes-public-52a723f29f5e)
-
+</details>
